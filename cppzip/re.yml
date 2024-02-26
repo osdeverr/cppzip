@@ -1,0 +1,6 @@
+type: static-library
+name: "cppzip"
+
+deps:
+  - vcpkg:libzip
+  - github:osdeverr/futile ^3.1.2

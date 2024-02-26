@@ -1,0 +1,20 @@
+type: executable
+name: ".tests"
+
+load-context.!standalone:
+  enabled: false
+
+platform.windows:
+  deps:
+    - vcpkg:gtest @ static-md
+
+platform.!windows:
+  deps:
+    - vcpkg:gtest
+
+platform.linux|osx:
+  cxx-global-link-deps:
+    - pthread
+
+deps:
+  - cppzip

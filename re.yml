@@ -1,0 +1,4 @@
+type: project
+name: "cppzip-project"
+
+inherit-caller-in-deps: true
